@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('../src/assets/styles/fonts/LibreBaskerville-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LibreBaskervilleBold';
+    src: url('../src/assets/styles/fonts/LibreBaskerville-Bold.ttf') format('truetype');
+}
