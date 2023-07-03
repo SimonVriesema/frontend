@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'LibreBaskerville';
-    src: url('../src/assets/styles/fonts/LibreBaskerville-Regular.ttf') format('truetype');
+    font-family: 'VarelaRound';
+    src: url('../src/assets/styles/fonts/VarelaRound-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'LibreBaskervilleBold';
-    src: url('../src/assets/styles/fonts/LibreBaskerville-Bold.ttf') format('truetype');
+    font-family: 'NotoSerif';
+    src: url('../src/assets/styles/fonts/NotoSerif-Bold.ttf') format('truetype');
 }
