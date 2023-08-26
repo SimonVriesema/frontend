@@ -1,13 +1,54 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Import Tailwind's base, components, and utilities */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
+/* Define the background pattern */
+/* Define the more subtle background pattern */
+.bg-diagonal-lines {
+  background-image: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.03) 10%,
+    transparent 10%,
+    transparent 90%,
+    rgba(0, 0, 0, 0.03) 90%,
+    rgba(0, 0, 0, 0.03) 100%
+  );
+  background-size: 16px 16px; /* Adjust the size to control the spacing of lines */
+}
+
+.bg-subtle-crosshatch {
+  background-image: linear-gradient(
+      45deg,
+      transparent 25%,
+      rgba(0, 0, 0, 0.03) 25%,
+      rgba(0, 0, 0, 0.03) 50%,
+      transparent 50%,
+      transparent 75%,
+      rgba(0, 0, 0, 0.03) 75%,
+      rgba(0, 0, 0, 0.03) 100%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 25%,
+      rgba(0, 0, 0, 0.03) 25%,
+      rgba(0, 0, 0, 0.03) 50%,
+      transparent 50%,
+      transparent 75%,
+      rgba(0, 0, 0, 0.03) 75%,
+      rgba(0, 0, 0, 0.03) 100%
+    );
+  background-size: 16px 16px;
+}
+
+/* Define your custom fonts using @font-face */
 @font-face {
-    font-family: 'VarelaRound';
-    src: url('../src/assets/styles/fonts/VarelaRound-Regular.ttf') format('truetype');
+  font-family: "VarelaRound";
+  src: url("../src/assets/styles/fonts/VarelaRound-Regular.ttf")
+    format("truetype");
 }
 
 @font-face {
-    font-family: 'NotoSerif';
-    src: url('../src/assets/styles/fonts/NotoSerif-Bold.ttf') format('truetype');
+  font-family: "NotoSerif";
+  src: url("../src/assets/styles/fonts/NotoSerif-Bold.ttf") format("truetype");
 }

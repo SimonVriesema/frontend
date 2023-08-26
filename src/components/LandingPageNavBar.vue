@@ -5,9 +5,8 @@
         <img :src="imagePath" class="h-8 mr-3" alt="TaskEase Logo">
       </a>
       <div class="flex md:order-2">
-        <a @click="this.$router.push('/get-started')" type="button"
-                class="cursor-pointer text-white bg-secondary hover:bg-secondaryhover focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-          Get started
+        <a class="cursor-pointer text-white bg-secondary hover:bg-secondaryhover focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          <router-link to="/get-started">Get started</router-link>
         </a>
         <button data-collapse-toggle="navbar-sticky" type="button"
                 class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
